@@ -1,0 +1,11 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=block" rel="stylesheet">
+<style>html,body{margin:0;padding:0;background:transparent;overflow:hidden}
+body{width:var(--w);height:var(--h);display:flex;align-items:center;justify-content:center;gap:calc(var(--h)*.07)}
+svg{width:calc(var(--h)*.6);height:calc(var(--h)*.6)}
+.word{font-family:'Space Grotesk';font-weight:600;font-size:calc(var(--h)*.48);letter-spacing:-.02em;line-height:1;color:var(--ink)}
+.word b{font-weight:600;color:var(--amber)}</style></head><body>
+<svg viewBox="0 0 32 32" fill="none"><path id="m" d="M4 25 L10.5 8 L16 19.5 L21.5 8 L28 25" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="19.5" r="3.4" fill="#FFB020"/></svg>
+<div class="word">macro<b>swap</b></div>
+<script>const p=new URLSearchParams(location.search);const light=p.get('t')==='light';const r=document.documentElement.style;r.setProperty('--w',(p.get('w')||1200)+'px');r.setProperty('--h',(p.get('h')||300)+'px');r.setProperty('--ink',light?'#0A0E17':'#E8ECF5');r.setProperty('--amber',light?'#E09400':'#FFB020');document.getElementById('m').setAttribute('stroke',light?'#0A0E17':'#E8ECF5');</script>
+</body></html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256" fill="none">
+  <!-- MacroSwap icon for explorers and listings: the mark on a dark circle, readable on light and dark backgrounds. -->
+  <circle cx="128" cy="128" r="128" fill="#0A0E17"/>
+  <g transform="translate(32 32) scale(6)">
+    <path d="M4 25 L10.5 8 L16 19.5 L21.5 8 L28 25" stroke="#E8ECF5" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="16" cy="19.5" r="3.4" fill="#FFB020"/>
+  </g>
+</svg>

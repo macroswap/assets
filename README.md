@@ -6,18 +6,44 @@ Official logos and icons of **MacroSwap**, the DAW (Decentralized Autonomous Wal
 
 The mark is an "M" drawn as a chart: two peaks with the **dip** in the middle, and the amber dot is the buy.
 
+![MacroSwap](macroswap-banner-1500x500.png)
+
 ## Files
+
+### Logo (mark + wordmark)
+
+| File | Size | Background |
+|---|---|---|
+| [`macroswap-logo-2400.png`](macroswap-logo-2400.png) · [`macroswap-logo-1200.png`](macroswap-logo-1200.png) | 2400×600 · 1200×300, transparent | dark |
+| [`macroswap-logo-light-2400.png`](macroswap-logo-light-2400.png) · [`macroswap-logo-light-1200.png`](macroswap-logo-light-1200.png) | 2400×600 · 1200×300, transparent | light |
+
+### Icon and mark
 
 | File | Use | Background |
 |---|---|---|
-| [`macroswap-icon.svg`](macroswap-icon.svg) | app icon, avatars, token lists, block explorers | any (it has its own dark circle) |
+| [`macroswap-icon.svg`](macroswap-icon.svg) | app icon, avatars, token lists, block explorers (vector, any size) | any (it has its own dark circle) |
+| [`macroswap-icon-32.svg`](macroswap-icon-32.svg) | the same icon declared as 32×32, for forms that check the SVG size | any |
 | [`macroswap-icon-32.png`](macroswap-icon-32.png) | token logo on Etherscan / BscScan (32×32) | any |
 | [`macroswap-icon-256.png`](macroswap-icon-256.png) | wallets, listings, CoinGecko-style forms (256×256) | any |
 | [`macroswap-icon-512.png`](macroswap-icon-512.png) | social profiles, previews (512×512) | any |
 | [`macroswap-mark.svg`](macroswap-mark.svg) | the mark alone, transparent | dark |
 | [`macroswap-mark-light.svg`](macroswap-mark-light.svg) | the mark alone, transparent | light |
 
-The PNGs are rendered from `macroswap-icon.svg` and keep a transparent background outside the circle.
+The icon PNGs are rendered from `macroswap-icon.svg` and keep a transparent background outside the circle.
+
+### Banners
+
+| File | Size | Use |
+|---|---|---|
+| [`macroswap-banner-1500x500.png`](macroswap-banner-1500x500.png) | 1500×500 | X (Twitter) header |
+| [`macroswap-banner-1200x630.png`](macroswap-banner-1200x630.png) | 1200×630 | link previews (Open Graph), LinkedIn, Telegram, Discord |
+| [`macroswap-banner-1280x640.png`](macroswap-banner-1280x640.png) | 1280×640 | GitHub social preview |
+
+### Sources
+
+[`source/banner.html`](source/banner.html) and [`source/logo.html`](source/logo.html) are the templates the banners and logo
+PNGs were rendered from (Google Fonts: Space Grotesk, Inter, JetBrains Mono). Open one in a browser with
+`?w=<width>&h=<height>` (and `&t=light` for the light logo) and take a screenshot at that exact size to make a new one.
 
 ## Colors
 

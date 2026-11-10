@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@500;600;700&display=block" rel="stylesheet">
+<style>
+:root{--bg:#0A0E17;--elev:#111726;--text:#E8ECF5;--t2:#A3ADC2;--t3:#6B7690;--amber:#FFB020;--blue:#7C9CFF;--green:#34D399;--line:#232C42}
+html,body{margin:0;padding:0;overflow:hidden}
+body{width:var(--w);height:var(--h);background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;position:relative}
+.glow{position:absolute;inset:0;background:radial-gradient(calc(var(--w)*.7) calc(var(--h)*.9) at 78% -10%,rgba(255,176,32,.16),transparent 62%),radial-gradient(calc(var(--w)*.6) calc(var(--h)*.9) at 0% 110%,rgba(124,156,255,.10),transparent 60%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:calc(var(--h)/8) calc(var(--h)/8);opacity:.35;mask-image:linear-gradient(90deg,transparent 30%,#000 75%)}
+.chart{position:absolute;right:0;top:0;height:100%;width:52%}
+.wrap{position:absolute;left:calc(var(--h)*.13);top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;gap:calc(var(--h)*.045);max-width:58%}
+.logo{display:flex;align-items:center;gap:calc(var(--h)*.03)}
+.logo svg{width:calc(var(--h)*.15);height:calc(var(--h)*.15)}
+.word{font-family:'Space Grotesk';font-weight:600;font-size:calc(var(--h)*.11);letter-spacing:-.02em}
+.word b{font-weight:600;color:var(--amber)}
+h1{margin:0;font-family:'Space Grotesk';font-weight:700;font-size:calc(var(--h)*.135);line-height:1.02;letter-spacing:-.03em}
+h1 span{color:var(--amber)}
+.sub{font-size:min(calc(var(--h)*.045),calc(var(--w)*.019));white-space:nowrap;color:var(--t2);font-weight:500}
+.sub strong{color:var(--text);font-weight:600}
+.chips{display:flex;gap:calc(var(--h)*.02);flex-wrap:wrap}
+.chip{font-size:calc(var(--h)*.034);padding:calc(var(--h)*.012) calc(var(--h)*.03);border:1px solid var(--line);border-radius:999px;background:rgba(17,23,38,.8);color:var(--text);font-weight:500}
+.chip.a{border-color:rgba(255,176,32,.45);color:var(--amber)}
+.foot{position:absolute;left:calc(var(--h)*.13);right:calc(var(--h)*.13);bottom:calc(var(--h)*.07);display:flex;justify-content:space-between;font-family:'JetBrains Mono';font-size:calc(var(--h)*.032);color:var(--t3)}
+.foot .url{color:var(--text)}
+</style></head><body>
+<div class="glow"></div><div class="grid"></div>
+<svg class="chart" viewBox="0 0 560 500" preserveAspectRatio="xMaxYMid slice" fill="none">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB020" stop-opacity=".22"/><stop offset="1" stop-color="#FFB020" stop-opacity="0"/></linearGradient></defs>
+  <path d="M0 250 L60 205 L110 230 L170 150 L230 190 L300 330 L350 300 L400 235 L460 160 L510 120 L560 90 L560 500 L0 500 Z" fill="url(#g)"/>
+  <path d="M0 250 L60 205 L110 230 L170 150 L230 190 L300 330 L350 300 L400 235 L460 160 L510 120 L560 90" stroke="#E8ECF5" stroke-opacity=".85" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="300" cy="330" r="30" fill="#FFB020" fill-opacity=".16"/><circle cx="300" cy="330" r="15" fill="#FFB020"/>
+  <text x="300" y="282" fill="#FFB020" font-family="JetBrains Mono" font-size="22" font-weight="500" text-anchor="middle">buy</text>
+</svg>
+<div class="wrap">
+  <div class="logo"><svg viewBox="0 0 32 32" fill="none"><path d="M4 25 L10.5 8 L16 19.5 L21.5 8 L28 25" stroke="#E8ECF5" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="19.5" r="3.4" fill="#FFB020"/></svg><div class="word">macro<b>swap</b></div></div>
+  <h1>Buy the dip.<br><span>On autopilot.</span></h1>
+  <div class="sub">The <strong>DAW</strong> · Decentralized Autonomous Wallet · 100% DeFi</div>
+  <div class="chips"><span class="chip a">Buy the dip</span><span class="chip">DCA</span><span class="chip">Buy and hold</span><span class="chip">Hedge</span></div>
+</div>
+<div class="foot"><span class="url">macroswap.finance</span><span>Ethereum · BNB Chain · non-custodial</span></div>
+<script>const p=new URLSearchParams(location.search);document.documentElement.style.setProperty('--w',(p.get('w')||1500)+'px');document.documentElement.style.setProperty('--h',(p.get('h')||500)+'px');if(+p.get('h')/+p.get('w')>0.45)document.querySelector('.chart').style.width='50%';</script>
+</body></html>
