@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- MacroSwap mark for light backgrounds: the "M" is a chart (two peaks and the dip); the amber dot is the buy. -->
+  <path d="M4 25 L10.5 8 L16 19.5 L21.5 8 L28 25" stroke="#0A0E17" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="16" cy="19.5" r="3.4" fill="#FFB020"/>
+</svg>
